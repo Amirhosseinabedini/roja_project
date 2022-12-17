@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .wrapper {
+  /* max-width: 800px; */
+  width: 98%;
+  margin: 150px auto;
+  /* padding-top: 20px; */
+}
+
+body .wrapper .your-slider {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
+
+    #jquery-script-menu {
+      /* position: absolute; */
+      height: 0px;
+      padding: 0;
+
+  }
+
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ 
+    <title>Responsive Demo | Owl Carousel | 2.3.4</title>
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+
+    <style>
+      .owl-dots {
+        display: none;
+      }
+      .holder {
+        position: relative;
+      }
+      .owl-prev {
+        left: 0;
+        transition: 0.5s;
+      }
+      .owl-next {
+        right: 0;
+        transition: 0.5s;
+      }
+      .owl-prev,
+      .owl-next {
+        position: absolute;
+        bottom: 0%;
+        width: 3%;
+        height: 100%;
+        outline: none;
+      }
+      .owl-prev:hover{
+        transition: 0.5s;
+        left: 10px;
+      }
+      .owl-next:hover{
+        transition: 0.5s;
+        right: 10px;
+      }
+      .owl-next:hover > span{
+        transition: 0.5s;
+        color: rgb(197, 32, 32);
+      }
+      .owl-prev:hover > span{
+        transition: 0.5s;
+        color: rgb(197, 32, 32);
+      }
+      .owl-prev > span,
+      .owl-next > span {
+        transition: 0.5s;
+        font-size: 20px;
+        color: #555;
+      }
+    </style>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+  </head>
+  <body>
+
+        <div class="large-12 columns">
+          <div class="owl-carousel owl-theme holder">
+            <div class="item">
+              <h4>1</h4>
+            </div>
+            <div class="item">
+              <h4>2</h4>
+            </div>
+            <div class="item">
+              <h4>3</h4>
+            </div>
+            <div class="item">
+              <h4>4</h4>
+            </div>
+            <div class="item">
+              <h4>5</h4>
+            </div>
+            <div class="item">
+              <h4>6</h4>
+            </div>
+            <div class="item">
+              <h4>7</h4>
+            </div>
+            <div class="item">
+              <h4>8</h4>
+            </div>
+            <div class="item">
+              <h4>9</h4>
+            </div>
+            <div class="item">
+              <h4>10</h4>
+            </div>
+            <div class="item">
+              <h4>11</h4>
+            </div>
+            <div class="item">
+              <h4>12</h4>
+            </div>
+          </div>
+
+          <script>
+            $(document).ready(function () {
+              $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                  0: {
+                    items: 1,
+                    nav: true,
+                  },
+                  600: {
+                    items: 2,
+                    nav: false,
+                  },
+                  1000: {
+                    items: 4,
+                    nav: true,
+                    loop: true,
+                    margin: 20,
+                  },
+                },
+              });
+            });
+          </script>
+        </div>
+
+    <script src="fontawesome/js/all.js"></script>
+  </body>
+</html>
